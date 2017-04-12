@@ -1,0 +1,143 @@
+<!--people.html-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com http://griffis.edumedia.ca  http://jurt0001.edumedia.ca 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content: griffis.edumedia.ca  placeholdit.imgix.net placehold.it ;"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <meta name="msapplication-tap-highlight" content="no"/>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
+        
+        <!-- Include the compiled Ratchet CSS -->
+        <link href="css/ratchet.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        
+        <title>Reviewr</title>
+        
+    </head>
+    <body>
+        <header class="bar bar-nav">
+            <a class="btn btn-link btn-nav pull-right" href="#peepsModal" id="add-review">
+                Review
+                <span class="icon icon-plus"></span>
+            </a>
+            <h1 class="title">ReviewR</h1>
+        </header>
+        <!--
+        <nav class="bar bar-tab">
+            <a class="tab-item">
+                <span class="icon icon-plus"></span>
+                <span class="tab-label">Add Person</span>
+            </a>
+        </nav>
+        -->
+        <div class="content" id="myList">
+            <!-- read through localStorage for contacts -->
+            <ul class="table-view" id="review-list">
+
+<!--
+                  <li class="table-view-cell">
+                    <span class="itemName">Horse</span> 
+
+                    <a class="navigate-right pull-right" href="#deleteModal">   
+                      <span class="star-rating" pull-left>5 Stars</span>
+                    </a>
+                </li>
+-->
+               
+            </ul>
+        </div>
+        
+        <div id="peepsModal" class="modal">
+            
+               <header class="bar bar-nav">
+<!--                <a class="icon icon-close pull-right" href="#peepsModal"></a>-->
+                <h1 class="title">Review</h1>
+            </header>
+
+<div class="content contentModal">
+
+                    <form class="input-group" id="form">
+                        <div class="input-row item" >
+                            <label>Item</label>
+                            <input id="item" type="text" placeholder="A Pony"/>
+                        </div>
+
+                        
+                          <div class="input-group stars" id="stars">
+                             <label></label>
+                              <span class="star">&nbsp;</span>
+                              <span class="star">&nbsp;</span>
+                              <span class="star">&nbsp;</span>
+                              <span class="star">&nbsp;</span>
+                              <span class="star">&nbsp;</span>         
+                        </div>
+                        
+                        
+                        
+                    <div id="captured-photo">
+                        
+                        
+                    </div>
+                        
+                        
+                        
+                    </form>
+                    <p class="content-padded">
+                       <a id="takePhoto" class="btn btn-block btn-positive">
+                            <span class="icon icon-play"></span>
+                            Take photo 
+                        </a>
+                         <a id ="saveMe" href="#peepsModal" class="btn btn-primary btn-block">
+                            <span class="icon icon-check"></span>
+                            Save  
+                        </a>
+                        <a id="cancelBtn" href="#peepsModal" class="btn btn-block btn-negative">
+                            <span class="icon icon-close"></span>
+                            Cancel 
+                        </a>
+                       
+                    </p>
+       
+       </div>
+        </div>
+        
+        
+        <div id="deleteModal" class="modal">
+        <div class="content contentModal">
+        
+        <div id="capturedImage">
+            
+        </div>
+        
+        
+        <p class="content-padded">
+        
+        
+        
+        
+        <a id="deleteReview" href="#deleteModal" class="btn btn-block btn-negative">
+                            <span class="icon icon-close"></span>
+                            Delete
+        </a>  
+        <a id="back" href="#deleteModal" class="btn btn-block btn-primary">
+                            <span class="icon icon-close"></span>
+                            Back
+        </a>
+          
+           
+        </p>
+        <!-- <img src="img/animal-brown-horse.jpg" alt="Horse"> -->
+        
+            </div>
+        </div>
+        
+        
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <!-- include the compiled Ratchet JS -->
+        <script src="js/ratchet.min.js"></script>
+        <script src="js/moment.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

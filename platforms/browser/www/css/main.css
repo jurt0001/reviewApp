@@ -1,0 +1,118 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+
+.bar-nav{    
+    margin-top: 20px;
+
+}
+
+.content{
+    margin-top: -6px;
+}
+
+#captured-photo{
+    width: 60%;
+    margin: 0 auto;
+    
+    
+}
+
+#newImage{
+    width: 100%;
+    margin: 0 auto;
+    
+    
+}
+
+
+#cancelBtn,#saveMe,#takePhoto{
+    width: 70%;
+    margin: 0 auto;
+    
+}
+
+label{
+font-size: 3rem;    
+    
+}
+
+.item{
+    
+    font-size: 2rem;
+    height: 4rem;
+}
+
+#item{
+    font-size: 1.5rem;
+    height: 4rem;
+}
+
+.img-list{
+    width: 10vw;
+}
+
+
+
+.contentModal{
+    margin-top: 25px;
+    
+}
+
+
+
+.big{
+    
+    width: 100%;
+}
+
+/*
+contentModal.img{
+    align-content: center;
+    
+}
+*/
+
+#capturedImage{
+    
+    width: 93%;
+    margin: 0 auto;
+    font: 1rem black;
+}
+
+
+/* STAR RATINGS SYSTEM*/
+
+.stars{
+    Margin: 0 auto;
+    padding-top: 8vh;
+  
+}
+
+
+
+.star{
+  color: goldenrod;
+  font-size: 3rem;
+  position: relative;
+  padding: 0 0.3rem; /* space out the stars */
+  margin: 150px 3vw;
+}
+.star::before{
+  position:absolute;
+  top:0;
+  left:0;
+  content: '\2606';
+  cursor: pointer;
+}
+.star:hover::before{
+  /* the :hover should come first */
+  content: '\2605' !important;
+  color: #bada55;
+}
+.star.rated::before{
+  /* the :hover should come first */
+  content: '\2605' !important;
+}
